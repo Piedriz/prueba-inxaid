@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { Formulario } from '../form/Form';
+import { Formulario } from '../form/Formulario';
 import { useCode } from '@/app/context/AppContext';
 
 export const RegisterCard = () => {
