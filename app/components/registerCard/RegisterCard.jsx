@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import Form from '../form/Form'
+import { Form } from '../form/Form';
 import { useCode } from '@/app/context/AppContext';
 
 export const RegisterCard = () => {
@@ -17,7 +17,7 @@ export const RegisterCard = () => {
 
     return (
         <div className='p-5 py-16  bg-black container mx-auto lg:max-w-md lg:bg-opacity-70 lg:absolute z-10 lg:py-7 lg:m-20'>
-            {/* Si success está presente, mostramos el mensaje personalizado */}
+            
             {code ? (
                 <>
                 <p className='font-bold text-4xl pb-4 text-white'>Registrado con exito!</p>
