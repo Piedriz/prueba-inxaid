@@ -12,15 +12,15 @@ import { schema } from '@/app/utils/formSchema';
 
 
 
-const Form = () => {
+export const Form = () => {
   const router = useRouter()
   const [code, setCode] = useCode();
+  const [cities, setCities] = useState([]);
+
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   });
-  const [cities, setCities] = useState([]);
   
-
   const onSubmit = (data) => {
     const code =generarCodigoAlfanumerico(10); 
     setCode(code)// Puedes cambiar esta lógica para generar el código como prefieras
@@ -156,4 +156,3 @@ const Form = () => {
   );
 };
 
-export default Form;
