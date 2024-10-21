@@ -12,7 +12,7 @@ import { schema } from '@/app/utils/formSchema';
 
 
 
-const Form = () => {
+export const Formulario = () => {
   const router = useRouter()
   const [code, setCode] = useCode();
   const [cities, setCities] = useState([]);
@@ -156,4 +156,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+

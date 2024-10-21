@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-
+import { Formulario } from '../form/Form';
 import { useCode } from '@/app/context/AppContext';
 
 export const RegisterCard = () => {
@@ -55,7 +55,7 @@ export const RegisterCard = () => {
                             X
                         </button>
                         <div className="overflow-y-auto max-h-[85vh]"> {/* Ajuste de altura */}
-                            <p>Hola</p>
+                            <Formulario/>
                         </div>
                     </div>
                 </div>
